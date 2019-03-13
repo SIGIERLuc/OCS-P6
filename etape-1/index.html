@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <title>Jeu de plateau</title>
+</head>
+
+<body>
+    <div id="game" class="container topMargin">
+        <section class="game">
+
+            <div class="row">
+                <div class=" col-sm-12 alignTexte">
+                    <button onclick="location.reload()">Génération de la grille</button>
+
+                </div>
+            </div>
+
+            <table class="topMargin" id="board" align="center">
+
+            </table>
+            <p>
+                Joueur 1 : <img src="../img/p1.png">
+                Joueur 2 : <img src="../img/p2.png">
+            </p>
+        </section>
+    </div>
+
+    <script src="../library/jquery.js"></script>
+    <script src="../js/Object.js"></script>
+    <script src="../js/Generation.js"></script>
+</body>
+
+</html>

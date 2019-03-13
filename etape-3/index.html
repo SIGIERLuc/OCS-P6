@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <title>Jeu de plateau</title>
+</head>
+
+<body>
+    <div id="game" class="container">
+        <section class="game">
+
+            <div class="row">
+                <div class="col-sm-12 alignTexte">
+                    <p class="importantText" id="playerTurn"> C'est le tour du joueur 1</p>
+                    <p>Choisissez votre nombre de case de déplacement <input id="numberOfmoove" type="number" value="1"
+                            min="1" max="3"></p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="bump col-sm-12">
+                    <button id="Haut">Haut</button>
+                </div>
+                <div class="bump col-sm-12">
+                    <button id="Gauche">Gauche</button>
+                    <button id="Bas">Bas</button>
+                    <button id="Droite">Droite</button>
+                </div>
+            </div>
+            <table id="board" align="center">
+
+            </table>
+            <p>
+                Joueur 1 : <img src="../img/p1.png">
+                Joueur 2 : <img src="../img/p2.png">
+            </p>
+        </section>
+    </div>
+    <div class="container">
+        <section id="fight" class="hidden game">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img id="blue" src="../img/p1-big.jpg">
+                    <p id="p1H"></p>
+                    <p id="p1W"></p>
+                </div>
+                <div class="alignTexte col-sm-4">
+                    <p class="importantText" id="activTurn"></p>
+                    <br>
+                    <p>Il peut <button id="attaquer">Attaquer</button></p>
+                    <br>
+                    <p>Ou bien se <button id="defendre">Défendre</button></p>
+                    <p class="importantText" id="combatLog"></p>
+                </div>
+                <div class="col-sm-4">
+                    <img id="red" src="../img/p2-big.jpg">
+                    <p id="p2H"></p>
+                    <p id="p2W"></p>
+                </div>
+            </div>
+        </section>
+        <section id="endScreen" class="alignTexte hidden">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 id="endTitle"></h2>
+                    <p>Vous pouvez relancer une partie en cliquant ici :</p>
+                    <button id="reload">Relancer une partie</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../library/jquery.js"></script>
+    <script src="../js/Object.js"></script>
+    <script src="../js/Generation.js"></script>
+    <script src="../js/moove.js"></script>
+    <script src="../js/fight.js"></script>
+</body>
+
+</html>
